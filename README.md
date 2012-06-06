@@ -10,6 +10,11 @@ This viewer is built with the following libraries:
   * Twitter Bootstrap 2.0.2
   * jQuery 1.7.1
 
+License
+=======
+
+MapGuide Mobile Viewer is licensed under the GNU LGPL v2.1
+
 How to install
 ==============
 
