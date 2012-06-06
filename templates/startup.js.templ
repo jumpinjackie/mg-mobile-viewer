@@ -1,0 +1,41 @@
+OpenLayers.Util.getImagesLocation = function() {
+    return "img/";
+};
+
+var viewer;
+$(document).ready(function() {
+    //Parse commercial layers
+    var qry = OpenLayers.Util.getParameters(window.location.href);
+    var commercialLayers = [];
+    if (typeof(qry.cmslayers) != 'undefined') {
+        commercialLayers = qry.cmslayers.split(".");
+    }
+    viewer = new MapGuide.Viewer({
+        div: 'viewer',
+        projection: '%s',
+        commercialLayers: commercialLayers,
+        mapExtents: {
+            minX: %s,
+            minY: %s,
+            maxX: %s,
+            maxY: %s
+        },
+        metersPerUnit: %s,
+        dpi: %s,
+        mapType: %s,
+        mgTiledGroups: [%s],
+        mgFiniteScaleList: [%s],
+        agentUrl: '%s',
+        session: '%s',
+        mapName: '%s',
+        mapDefinition: '%s',
+        enableOfflineTileCache: false,
+        offlineTileCacheImageFormat: 'image/png',
+        availableCommercialLayers: {
+            GOOGLE: [%s],
+            OSM: []
+        },
+        offlineTileStrategy: MapGuide.OFFLINE_TILE_STRATEGY.LOCAL_FIRST,
+        keepSessionAlive: true
+    });
+});
