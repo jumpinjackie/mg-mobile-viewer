@@ -34,6 +34,8 @@ glayers: A dot-separated list of google layer subtypes to make available
   * satellite
   * terrain
 
+Please note that your Map Definition must be projected into the WGS84.PseudoMercator coordinate system in order for your data to line up with what's in Google and OpenStreetMap
+
 Example URLs
 ============
 
@@ -45,3 +47,17 @@ With Google:
 
 With both OpenStreetMap and Google:
   http://yourservername/mapguide/mobileviewer/index.php?map=Library://Samples/Sheboygan/Maps/Sheboygan.MapDefinition&cmslayers=osm.google&glayers=hybrid.streets.satellite.terrain
+
+Un-implemented functionality
+============================
+
+Quite a few, since you're asking:
+
+  * Legend/Layer visibility control
+  * Viewing attributes of selected features
+  * Non-point methods of feature selections. Current selection is a bit buggy.
+  * Tools you have come to expect like buffer, measure, etc, etc.
+
+This is currently a basic and simple map viewer. It is not an AJAX or Fusion viewer in terms of features and functionality. Nothing more. Nothing less.
+
+Happy to accept pull requests to plug these deficiencies :)
