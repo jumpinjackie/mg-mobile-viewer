@@ -1,7 +1,9 @@
 MapGuide Mobile Viewer
 ======================
 
-A mobile-friendly HTML5 MapGuide viewer designed for use in mobile and tablet devices (ie. Android/iOS) and any modern HTML5-capable web browser
+A **proof-of-concept** mobile-friendly HTML5 MapGuide viewer designed for use in mobile and tablet devices (ie. Android/iOS) and any modern HTML5-capable web browser.
+
+If you are after a production-quality mobile viewer, consider using the [Kaliopa Mobile Viewer](https://github.com/sreckolipovsek/KaliopaMobileViewer)
 
 No attempts have been made (and nor will there be any attempts) to polyfill/shim missing and/or unsupported functionality to make this work in a certain browser from Redmond. It is 2012, please use a modern browser for the sake of moving the web forward :)
 
