@@ -1,3 +1,9 @@
+NOTICE: This repository is no longer maintained.
+
+For a mobile-friendly viewer for MapGuide, check out:
+ * [Kaliopa Mobile Viewer](https://github.com/sreckolipovsek/KaliopaMobileViewer)
+ * [mapguide-react-layout with the sidebar template](https://github.com/jumpinjackie/mapguide-react-layout)
+
 MapGuide Mobile Viewer
 ======================
 
